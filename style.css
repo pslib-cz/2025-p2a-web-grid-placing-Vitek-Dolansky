@@ -39,3 +39,41 @@ h6,
   font-size: 32px;
   background-color: var(--yellow);
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr 2fr);
+  grid-template-rows: repeat(10, 50px);
+}
+
+.item1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.item2 {
+  grid-column-start: 5;
+  grid-column-end: -1;
+}
+
+.item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item8 {
+  grid-row: span 2;
+}
+
+.item15 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.item18 {
+  grid-column: span 4 / 9;
+}
+
+.item20 {
+  grid-row: 4 / span 3;
+}
